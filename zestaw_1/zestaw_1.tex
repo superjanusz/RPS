@@ -1,11 +1,6 @@
-\documentclass[12pt]{article} 
+\documentclass[fleqn]{article}
 
-\textheight=23.7cm \textwidth=17cm  \topmargin=-1.5cm \hoffset=-2cm
-
-
-\usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[polish]{babel}
 
 \usepackage{amscd}
 \usepackage{amsfonts}
@@ -13,6 +8,17 @@
 \usepackage{graphicx}
 \usepackage{amsthm}
 
+\usepackage[utf8]{inputenc}
+\usepackage[document]{ragged2e}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{cancel}
+\usepackage{polski}
+\usepackage{calligra}
+\usepackage{enumerate}
 
 \def\B{\mathcal{B}}
 \def\E{\mathcal{E}}
@@ -49,7 +55,6 @@
 
 \begin{document}
 
-
 \title{Zadania z Rachunku Prawdopodobieństwa \\ Ćwiczenia .. z dnia ...}
 \date{}
 \medskip
@@ -61,18 +66,19 @@
 \medskip
 
 \noindent{\bf Zad. 4 (SS)} 
-\medskip\\
+\medskip
+
 A - liczby podzielne przez 2 \\
 B - liczby podzielne przez 3 \\
-C - liczby podzielne przez 5 \\ \\
-|A| = 150  \\
-|B| - 100   \\
-|C| - 60 \\
-$ |A \cap B| = 50 $\\
-$|A \cap C| = 30$ \\
-$|B \cap C| = 20 $\\
-$|A \cap B \cap C| = 10$ \\
-$|A \cup B \cup C| = |A| + |B| + |C| - (|A \cap B|  + |A \cap C| + |B \cap C|) + |A \cap B \cap C| = 220  $
+C - liczby podzielne przez 5 \\
+\[|A| = 150\]
+\[|B| = 100\]
+\[|C| = 60 \]
+\[|A \cap B| = 50\]
+\[|A \cap C| = 30\]
+\[|B \cap C| = 20\]
+\[|A \cap B \cap C| = 10\]
+\[|A \cup B \cup C| = |A| + |B| + |C| - (|A \cap B|  + |A \cap C| + |B \cap C|) + |A \cap B \cap C| = 220 \]
 
 \noindent{\bf Zad. 5 (KA)}
 \medskip
@@ -87,10 +93,10 @@ W każdej trasie jest 8 kroków w prawo i 5 kroków do góry, łącznie 13 krok�
 
 \[{13 \choose 8} \cdot {5 \choose 5}
 ={13 \choose 8} \cdot 1={13 \choose 8}
-=\frac{13!}{8!5!}
-=\frac{9 \cdot \cancelto{2}{10} \cdot 11 \cdot \cancelto{1}{12} \cdot 13}
+= \frac{13!}{8!5!}
+= \frac{9 \cdot \cancelto{2}{10} \cdot 11 \cdot \cancelto{1}{12} \cdot 13}
 {1 \cdot 2 \cdot \cancel{3} \cdot \cancel{4} \cdot \cancel{5}}
-=\frac{2574}{2}=1287\]
+= \frac{2574}{2}=1287\]
 
 Odp. 1287 ścieżek.
 
@@ -102,11 +108,11 @@ b) Ile jest ścieżek z a) przechodzących przez punkt $(5, 2)$?
 (\underbrace{PPP...P}_{\displaystyle\text{5 razy}}
 \underbrace{GGG...G}_{\displaystyle\text{2 razy}})\]
 \[{7 \choose 5} \cdot {2 \choose 2}
-={7 \choose 5} \cdot 1
-={7 \choose 5}
-=\frac{7!}{5!2!}
-=\frac{\cancel{5!} \cdot 6 \cdot 7}{\cancel{5!} \cdot 1 \cdot 2}
-=\frac{42}{2}=21\]
+= {7 \choose 5} \cdot 1
+= {7 \choose 5}
+= \frac{7!}{5!2!}
+= \frac{\cancel{5!} \cdot 6 \cdot 7}{\cancel{5!} \cdot 1 \cdot 2}
+= \frac{42}{2}=21\]
 
 \[(PGPPG...) \qquad 
 (\underbrace{PPP...P}_{\displaystyle\text{3 razy}}\underbrace{GGG...G}_{\displaystyle\text{3 razy}})\]
@@ -116,32 +122,30 @@ b) Ile jest ścieżek z a) przechodzących przez punkt $(5, 2)$?
 =\frac{6!}{3!3!}
 =\frac{\cancel{3!} \cdot 4 \cdot 5 \cdot \cancel{6}}
 {\cancel{3!} \cdot 1 \cdot \cancel{2} \cdot \cancel{3}}
-=20\]
+= 20\]
 
 \[21  \cdot  20 = 420\]
 
 Odp. 420 ścieżek.
-
 \medskip
 
 \noindent{\bf Zad. 6 (JK)} 
-\medskip\\
-$ {n\choose k} $
+\medskip
+\[{n\choose k}\]
 \medskip
 
 \noindent{\bf Zad. 8 (SS)} 
-\medskip\\
-$\frac{6!}{4! \cdot 2!}$
+\medskip
+\[\frac{6!}{4! \cdot 2!}\]
 \medskip
 
 \noindent{\bf Zad. 12 (SS)} 
-\medskip\\
-$ {5\choose 2} {6\choose 2} {4\choose 3} $
+\medskip
+\[{5\choose 2} {6\choose 2} {4\choose 3}\]
 
 \noindent{\bf Zad. 14 (JK)} 
-\medskip\\
-$\frac{n!}{(n - r)!}$
 \medskip
-
+\[\frac{n!}{(n - r)!}\]
+\medskip
 
 \end{document}
