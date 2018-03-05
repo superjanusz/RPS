@@ -50,7 +50,7 @@
 \begin{document}
 
 
-\title{Zadania z Rachunku Prawdopodobie?�stwa \\ ćwiczenia .. z dnia ...}
+\title{Zadania z Rachunku Prawdopodobieństwa \\ Ćwiczenia .. z dnia ...}
 \date{}
 \medskip
 \noindent{\bf Zad. 1} 
@@ -73,6 +73,56 @@ $|A \cap C| = 30$ \\
 $|B \cap C| = 20 $\\
 $|A \cap B \cap C| = 10$ \\
 $|A \cup B \cup C| = |A| + |B| + |C| - (|A \cap B|  + |A \cap C| + |B \cap C|) + |A \cap B \cap C| = 220  $
+
+\noindent{\bf Zad. 5 (KA)}
+\medskip
+
+a) Ile jest możliwych różnych ścieżek tego punktu?
+
+\[(PGPPG...) \qquad 
+(\underbrace{PPP...P}_{\displaystyle\text{8 razy}}
+\underbrace{GGG...G}_{\displaystyle\text{5 razy}})\]
+
+W każdej trasie jest 8 kroków w prawo i 5 kroków do góry, łącznie 13 kroków.
+
+\[{13 \choose 8} \cdot {5 \choose 5}
+={13 \choose 8} \cdot 1={13 \choose 8}
+=\frac{13!}{8!5!}
+=\frac{9 \cdot \cancelto{2}{10} \cdot 11 \cdot \cancelto{1}{12} \cdot 13}
+{1 \cdot 2 \cdot \cancel{3} \cdot \cancel{4} \cdot \cancel{5}}
+=\frac{2574}{2}=1287\]
+
+Odp. 1287 ścieżek.
+
+\vspace{1em}
+
+b) Ile jest ścieżek z a) przechodzących przez punkt $(5, 2)$?
+
+\[(PGPPG...) \qquad 
+(\underbrace{PPP...P}_{\displaystyle\text{5 razy}}
+\underbrace{GGG...G}_{\displaystyle\text{2 razy}})\]
+\[{7 \choose 5} \cdot {2 \choose 2}
+={7 \choose 5} \cdot 1
+={7 \choose 5}
+=\frac{7!}{5!2!}
+=\frac{\cancel{5!} \cdot 6 \cdot 7}{\cancel{5!} \cdot 1 \cdot 2}
+=\frac{42}{2}=21\]
+
+\[(PGPPG...) \qquad 
+(\underbrace{PPP...P}_{\displaystyle\text{3 razy}}\underbrace{GGG...G}_{\displaystyle\text{3 razy}})\]
+\[{6 \choose 3} \cdot {3 \choose 3}
+={6 \choose 3} \cdot 1
+={6 \choose 3}
+=\frac{6!}{3!3!}
+=\frac{\cancel{3!} \cdot 4 \cdot 5 \cdot \cancel{6}}
+{\cancel{3!} \cdot 1 \cdot \cancel{2} \cdot \cancel{3}}
+=20\]
+
+\[21  \cdot  20 = 420\]
+
+Odp. 420 ścieżek.
+
+\medskip
 
 \medskip
 
