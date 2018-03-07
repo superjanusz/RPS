@@ -69,7 +69,15 @@ Jesli w Krakowie mieszka przynajmniej 640,001 osób, to z podstawowej zadady zli
 Podobno w Krakowie jest 754,056 mieszkanców. \\
 \\
 
-\noindent{\bf Zad. 2}
+\noindent{\bf Zad. 2 (KO)}
+\medskip
+
+Zakładamy że mamy grupę n ludzi.
+Prawdopodobieństwo że dwie dowolne osoby mają wspolne urodziny wynosi $\frac{1}{365}$.\\
+Prawdopodobieństwo że trzecia osoba ma wspolne urodziny z jedną z dwóch popzednich wynosi $\frac{2}{365}$.\\
+Czyli dla n osob prawdopodobieństwo ze przynajmniej 2 osoby maja wspolne urodziny wynosi
+\[P = \frac{1}{365} + \frac{2}{365} + \frac{3}{365} + ... + \frac{n - 1}{365} = \frac{n\cdot(n-1)}{365}\]
+Jesli P > 50\%, to n > 23.
 \medskip
 
 \noindent{\bf Zad. 4 (SS)}
@@ -141,9 +149,49 @@ Odp. 420 ścieżek.
 \[{n\choose k}\]
 \medskip
 
+\noindent{\bf Zad. 7 (KO)}
+\medskip
+
+S = \big\{1, 2, .., 20 \big\}. \\
+S' = S - \big\{1, 2, 3, 4, 5 \big\} = \big\{6, 7, .., 20 \big\}. \\
+Ilość wszystkich 4-elementowych podzbiorów S wynosi ${20 \choose 4}$. \\
+Ilość wszystkich 4-elementowych podzbiorów S' wynosi ${15 \choose 4}$. Są to podzbiory niezawierające zadnego elementu ze zbioru \big\{1, 2, 3, 4, 5 \big\}.\\
+Stąd ilosc wszystkich podzbiorów S zawierających co najmniej jeden element z \big\{1, 2, 3, 4, 5 \big\} wynosi ${20 \choose 4}$ - ${15 \choose 4}$.\\
+
+\medskip
+
 \noindent{\bf Zad. 8 (SS)}
 \medskip
 \[\frac{6!}{4! \cdot 2!}\]
+\medskip
+
+\noindent{\bf Zad. 9 (KO)}
+\medskip
+
+m wadliwych anten ustawiamy w taki sposob, żeby między każde dwie ustawić przynajmniej jedną działającą. Czyli $(n - m)$ działających anten ukladamy na $(m - 1)$ miejscach. \\
+Jest to równe liczbie surjekcji z $\big\{1, 2, .., (n-m) \big\}$ do $\big\{1, 2, .., (m-1) \big\}$. \\
+\[(m-1)! \cdot S((n-m), (m-1)\]
+
+\medskip
+
+\noindent{\bf Zad. 10 (KO)}
+\medskip
+
+a)
+Z 8 graczy mozemy wybrac ${8 \choose 2}$ par, oraz każda para moze miec 2 rozne wyniki. Czyli ${ 8\choose 2}^2$.\\
+b) \\
+Pierwsza runda: ${8 \choose 2}$ par oraz ${ 8\choose 2}^2$ różnych wyników.\\
+Druga runda: ${4 \choose 2}$ par oraz ${ 4\choose 2}^2$ różnych wyników. \\
+Trzecia runda: ${2 \choose 2}$ par oraz ${ 2\choose 2}^2$ różnych wyników. \\
+\[{ 8\choose 2}^2 \cdot { 4\choose 2}^2 \cdot { 2\choose 2}^2\]
+
+\medskip
+
+\noindent{\bf Zad. 11 (KO)}
+\medskip
+\[x_1 + x_2 + ... + x_r = n \]
+Jest równe liczbie surjekcji z $\big\{1, 2, .., n \big\}$ do $\big\{1, 2, .., r \big\}$. \\
+\[r! \cdot S(n, r)\]
 \medskip
 
 \noindent{\bf Zad. 12 (SS)}
